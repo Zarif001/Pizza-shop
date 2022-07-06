@@ -2,6 +2,8 @@ try {
     const basket = () => {
 
         const arr = JSON.parse(window.localStorage.getItem('arr'))
+
+        console.log(arr);
         
 
         arr.forEach(({ img, titleText, spanText, btnText, sizeText }) => {
