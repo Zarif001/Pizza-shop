@@ -1,0 +1,27 @@
+main.main 
+    .container 
+        .main__tabs 
+            .main__content
+                .main__content-hidden
+                    .main__content-burger 
+                        img(src=("../images/burger.png"), alt="")  
+                    .main__content-categories
+                        ul.main__content-list    
+                            li: a(href="").main__content-link Все
+                            li: a(href="" data-category="Мясная").main__content-link Мясные
+                            li: a(href="" data-category="Вегетарианская").main__content-link Вегетарианская
+                            li: a(href="" data-category="Гриль").main__content-link Гриль
+                            li: a(href="" data-category="Острый").main__content-link Острые
+                            li: a(href="" data-category="Закрытые").main__content-link Закрытые
+                .main__content-sort 
+                    .main__content-label   
+                        img.main__content-arrow(src="../images/arrow.svg" alt="")
+                        span.main__content-sortSpan Сортировка по:
+                        span.main__content-sortInfo 
+                    .main__content-sortPopup 
+                        ul 
+                            li(data-sort="популярности").main__content-li популярности
+                            li(data-sort="290").main__content-li цене
+                            li(data-sort="алфавиту").main__content-li алфавиту
+            h3.main__content-title Все пиццы
+            .main__tabs-content

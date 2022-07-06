@@ -1,0 +1,434 @@
+@import 'root.scss';
+.main {
+    background: $white;
+    padding: 40px 0 96px 0;
+    border-radius: 0px 0px 10px 10px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            transition: 1s;
+
+            &.active {
+                left: 0;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            padding: 14px 36px 16px 36px;
+            background: $grayLight;
+            color: $textBlack;
+            border-radius: 30px;
+            margin-right: 9px;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-bold';
+
+            &.active {
+                background: $blackLight;
+                color: $white;
+            }
+        }
+
+        &-label {
+            padding: 14px 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        &-arrow {
+            transition: 0.5s;
+        }
+
+        &-sortInfo {
+            border-bottom: 1px dashed $orange;
+            color: $orange;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-regular';
+        }
+
+        &-title {
+            margin-top: 32px;
+            margin-bottom: 35px;
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.01em;
+            font-family: 'proxima-nova-bold';
+
+        }
+
+        &-burger {
+            display: none;
+            transition: 1s;
+
+            &.active {
+                display: none;
+            }
+        }
+
+        &-burger img {
+            width: 100px;
+        }
+    }
+
+    &__content-sortPopup {
+        background: $white;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        max-width: 132px;
+        width: 100%;
+        margin-left: auto;
+        padding: 13px 0;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__content-li {
+        padding: 11px 22px 11px 14px;
+        color: $blackDark;
+        letter-spacing: 0.015em;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: 'proxima-nova-regular';
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            background: rgba(254, 95, 30, 0.05);
+            color: $orange;
+        }
+    }
+
+    &__content-sortSpan {
+        color: $textBlack;
+        letter-spacing: 0.015em;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: 'proxima-nova-bold';
+        margin-left: 7px;
+        margin-right: 8px;
+    }
+
+    &__tabs {
+
+        &-item {
+            max-width: 280px;
+            width: 100%;
+            margin-bottom: 65px;
+        }
+
+
+        &-title {
+            color: $blackDark;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            font-family: 'proxima-nova-extrabold';
+            margin-top: 11px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        &-info {
+            background: #F3F3F3;
+            border-radius: 10px;
+            padding: 7px 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            max-width: 120px;
+            width: 100%;
+            color: $textBlack;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'proxima-nova-bold';
+            letter-spacing: 0.015em;
+            padding: 7px 0 15px 0;
+
+            &.active {
+                background: $white;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+            }
+        }
+
+        &-size {
+            display: flex;
+            justify-content: center;
+            max-width: 80px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'proxima-nova-bold';
+            letter-spacing: 0.015em;
+            color: $textBlack;
+            padding: 7px 0;
+
+            &.active {
+                background: $white;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+            }
+        }
+
+        &-add {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+        }
+
+        &-price {
+            color: $blackDark;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-bold';
+            font-weight: 900;
+        }
+
+        &-addCart {
+            display: flex;
+            align-items: center;
+            border: 1px solid #EB5A1E;
+            border-radius: 30px;
+            padding: 11px 18px 14px 18px;
+            color: $orange;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'proxima-nova-extrabold';
+        }
+
+        &-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+
+    // Cart.pug
+    &__basket {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F4F4F4;
+        margin-bottom: 44px;
+
+        &-cart,
+        &-leftCart {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        &-title {
+            color: $blackDark;
+            font-size: 32px;
+            line-height: 39px;
+            font-family: 'proxima-nova-bold';
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            margin-left: 19px;
+        }
+
+        &-clear {
+            font-size: 16px;
+            line-height: 19px;
+            color: #B6B6B6;
+            font-family: 'proxima-nova-regular';
+            margin-left: 12px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    &__pizza {
+        &-img {
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+
+        &-aboutCheese,
+        &-aboutPizza {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        &-title {
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: $blackDark;
+            font-family: 'proxima-nova-bold';
+            margin-bottom: 3px;
+            margin-left: 15px;
+        }
+
+        &-describe {
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'proxima-nova-regular';
+            color: #8D8D8D;
+            letter-spacing: 0.01em;
+            margin-left: 15px;
+        }
+
+        &-cart {
+            display: flex;
+            align-items: center;
+
+        }
+
+        &-number {
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: $blackDark;
+            font-family: 'proxima-nova-bold';
+            margin: 0 12px;
+        }
+
+        &-price {
+            font-size: 22px;
+            line-height: 27px;
+            color: $blackDark;
+            font-family: 'proxima-nova-bold';
+            letter-spacing: 0.01em;
+            font-weight: 900;
+        }
+    }
+
+    &__check {
+
+        &-top,
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        &-text,
+        &-span {
+            font-size: 22px;
+            line-height: 27px;
+            color: $blackDark;
+            font-family: 'proxima-nova-regular';
+            letter-spacing: 0.01em;
+        }
+
+        &-span {
+            font-family: 'proxima-nova-bold';
+        }
+
+        &-back {
+            font-size: 16px;
+            line-height: 19px;
+            color: #CACACA;
+            font-family: 'proxima-nova-regular';
+            border: 1px solid #D3D3D3;
+            padding: 18px 0;
+            text-align: center;
+            border-radius: 30px;
+            max-width: 211px;
+            width: 100%;
+        }
+
+        &-pay {
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'proxima-nova-bold';
+            padding: 18px 0;
+            max-width: 211px;
+            width: 100%;
+            text-align: center;
+            background: #FE5F1E;
+            border-radius: 30px;
+        }
+
+        &-price,
+        &-spanPrice {
+            font-size: 22px;
+            line-height: 27px;
+            color: $blackDark;
+            letter-spacing: 0.01em;
+            font-family: 'proxima-nova-bold';
+        }
+
+        &-spanPrice {
+            color: $orange;
+            font-family: 'proxima-nova-bold';
+        }
+
+    }
+
+    &__truck {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 163px;
+
+        &-title {
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.01em;
+            color: $blackDark;
+            font-family: 'proxima-nova-bold';
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        &-picture {
+            display: flex;
+            align-items: center;
+        }
+
+        &-describe {
+            font-size: 18px;
+            line-height: 145.4%;
+            color: #777777;
+            max-width: 547px;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            margin-bottom: 47px;
+        }
+
+        &-btn {
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-bold';
+            padding: 15px 0;
+            background: #282828;
+            border-radius: 30px;
+            max-width: 210px;
+            width: 100%;
+            margin-top: 70px;
+        }
+    }
+
+
+}

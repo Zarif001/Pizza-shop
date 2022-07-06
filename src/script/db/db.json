@@ -1,0 +1,148 @@
+{
+    "db": [
+        {
+            "img": "../images/burger-pizza.png",
+            "title": "Мясная пицца",
+            "category": "Мясная",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 395 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/burger-pizza.png",
+            "title": "Мясная пицца",
+            "category": "Мясная",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 395 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/burger-pizza.png",
+            "title": "Мясная пицца",
+            "category": "Мясная",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 395 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/burger-pizza.png",
+            "title": "Мясная пицца",
+            "category": "Мясная",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 395 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/cheese-pizza.png",
+            "title": "Сырная пицца",
+            "category": "Вегетарианская",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 450 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/cheese-pizza.png",
+            "title": "Сырная пицца",
+            "category": "Вегетарианская",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 450 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/cheese-pizza.png",
+            "title": "Сырная пицца",
+            "category": "Вегетарианская",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 450 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/cheese-pizza.png",
+            "title": "Сырная пицца",
+            "category": "Вегетарианская",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 450 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/chicken-pizza.png",
+            "title": "Гриль пицца",
+            "category": "Гриль",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 385 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/chicken-pizza.png",
+            "title": "Острая пицца",
+            "category": "Острая",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 385 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "./images/chicken-pizza.png",
+            "title": "Острая пицца",
+            "category": "Острая",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "от 385 ₽",
+            "addBtn": "+ Добавить"
+        },
+        {
+            "img": "",
+            "title": "Данных пицц пока нет",
+            "category": "Закрытые",
+            "typeThin": "тонкое",
+            "typeTraditional": "традиционная",
+            "sizeMini": "26 см.",
+            "sizeMedium": "30 см.",
+            "sizeBig":  "40 см.",
+            "price": "Пока цены нет",
+            "addBtn": "+ Добавить"
+        }
+    ]
+}

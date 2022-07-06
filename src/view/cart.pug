@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cart        
+    body 
+        header.header 
+            .wrapper.header__line
+                .container 
+                    nav.header__nav 
+                        .header__nav-logo 
+                            a(href="")
+                                img(src="../images/logo.png" alt="") 
+                            .header__logo-text 
+                                h2.header__logo-title REACT PIZZA
+                                span.header__logo-description самая вкусная пицца во вселенной
+        main.main 
+            .container_second.main__line
+                .main__basket
+                    .main__basket-cart 
+                        img(src=("../images/basket.svg"), alt="") 
+                        h2.main__basket-title Корзина
+                    .main__basket-leftCart 
+                        img(src=("../images/rubbish.svg") alt="")
+                        h5.main__basket-clear Очистить корзину
+                .main__pizza-cheese
+                .main__check 
+                    .main__check-top    
+                        p.main__check-text Всего пицц: #[span.main__check-span 3 шт.]
+                        p.main__check-price Сумма заказа: #[span.main__check-spanPrice 900 ₽]
+                    .main__check-bottom 
+                        a.main__check-back(href="index.html") Вернуться назад
+                        a.main__check-pay(href="")  Оплатить сейчас

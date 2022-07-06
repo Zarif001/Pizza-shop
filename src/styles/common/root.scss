@@ -1,0 +1,40 @@
+$orange: #FE5F1E;
+$white: #FFFFFF;
+$blackLight: #282828;
+$blackDark: #000000;
+$grayLight: #F9F9F9;
+$textBlack: #2C2C2C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1235px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_second {
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 100px;
+}
+
+body {
+    background: #FFDF8C;
+    padding: 45px 55px 63px 45px;
+}
+
+.wrapper {
+    background: $white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+}

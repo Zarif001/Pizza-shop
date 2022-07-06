@@ -1,0 +1,85 @@
+@import 'root.scss';
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0 40px 0;
+    }
+
+    &__nav-logo {
+        display: flex;
+    }
+
+    &__logo-text {
+        margin-left: 17px;
+    }
+
+    &__logo-title {
+        color: $blackDark;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        line-height: 29px;
+        font-size: 24px;
+        font-family: 'proxima-nova-extrabold';
+    }
+
+    &__logo-description {
+        color: #7B7B7B;
+        line-height: 19px;
+        font-size: 16px;
+        font-family: 'proxima-nova-regular';
+        font-weight: 400;
+    }
+
+    &__cart-button {
+        border: none;
+        background: $orange;
+        padding: 13px 23px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__cart-price,
+    &__cart-amount {
+        color: $white;
+        line-height: 19px;
+        font-size: 16px;
+        font-family: 'proxima-nova-bold';
+    }
+
+    &__cart-amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__cart-amount img {
+        margin-right: 8px;
+    }
+
+    &__cart-price::after {
+        content: '';
+        display: block;
+        background: rgba(255, 255, 255, 0.25);
+        height: 25px;
+        width: 1px;
+        margin: 0 13px;
+    }
+
+    &__cart-price {
+        display: flex;
+        align-items: center;
+    }
+
+    &__line::after {
+        content: '';
+        display: block;
+        width: 99%;
+        height: 1px;
+        background: #F7F7F7;
+        margin-left: auto;
+    }
+}

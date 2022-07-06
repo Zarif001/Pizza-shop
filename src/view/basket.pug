@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Basket
+    body 
+        header.header 
+            .wrapper.header__line
+                .container 
+                    nav.header__nav 
+                        .header__nav-logo 
+                            a(href="")
+                                img(src=("../images/logo.png") alt="") 
+                            .header__logo-text 
+                                h2.header__logo-title REACT PIZZA
+                                span.header__logo-description самая вкусная пицца во вселенной
+        main.main   
+            .container  
+                .main__truck 
+                    .main__truck-picture 
+                        h2.main__truck-title Корзина пустая 
+                        img(src=("../images/smile.jpg") alt="")
+                    p.main__truck-describe  Вероятней всего, вы не заказывали ещё пиццу. Для того, чтобы заказать пиццу, перейди на главную страницу.
+                    img.main__truck-img(src=("../images/truck.png") alt="")
+                    a(href="index.html").main__truck-btn Вернуться назад 
