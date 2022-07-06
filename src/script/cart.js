@@ -14,7 +14,7 @@ try {
             pizzaAbout.classList.add('main__pizza-aboutCheese')
             pizzaAbout.innerHTML = `
             <div class="main__pizza-aboutPizza">
-            <img class="main__pizza-img" src="${arr[2]}" alt="">
+            <img class="main__pizza-img" src="${arr}" alt="">
             <div class="main__pizza-desctibtion">
                 <h3 class="main__pizza-title">${arr[0]} </h3>
                 <p class="main__pizza-describe">${arr[3]}, <span>${arr[4]}</span></p>
